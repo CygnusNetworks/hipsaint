@@ -1,0 +1,5 @@
+python-hipsaint (0.4.8) UNRELEASED; urgency=low
+
+  * Initial Debian Packaging
+
+ -- Dr. Torge Szczepanek <debian@cygnusnetworks.de>  Wed, 02 Apr 2014 16:24:08 +0200
