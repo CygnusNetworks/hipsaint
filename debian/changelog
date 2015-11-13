@@ -1,3 +1,9 @@
+python-hipsaint (0.5.2) jessie; urgency=medium
+
+  * New upstream version
+
+ -- Dr. Torge Szczepanek <debian@cygnusnetworks.de>  Fri, 13 Nov 2015 16:45:42 +0100
+
 python-hipsaint (0.4.8+nmu2) wheezy; urgency=low
 
   * Non-maintainer upload.
