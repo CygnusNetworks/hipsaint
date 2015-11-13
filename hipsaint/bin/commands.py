@@ -9,6 +9,16 @@ def main():
 
     parser = OptionParser(usage, version="%%prog v%s" % hipsaint.__version__)
 
+    parser.add_option("-H", "--host",
+                      dest="api_host",
+                      default="api.hipchat.com",
+                      help="HipChat Server to deliver message to (default: api.hipchat.com)")
+
+    parser.add_option("-V", "--api_version",
+                      dest="api_version",
+                      default="1",
+                      help="API version to use, either 1 or 2")
+
     parser.add_option("-r", "--room",
                       dest="room_id",
                       default="",
@@ -17,7 +27,7 @@ def main():
     parser.add_option("-u", "--user",
                       dest="user",
                       default="Nagios",
-                      help="Username to deliver message as")
+                      help="Username to deliver message as, when using API version 1")
 
     parser.add_option("-t", "--token",
                       dest="token",
@@ -41,6 +51,17 @@ def main():
                       dest="notify",
                       help="Whether or not this message should trigger a "
                            "notification for people in the room")
+
+    parser.add_option("-f", "--format",
+                      default="html",
+                      dest="msg_format",
+                      help="Determines how messages are rendered by HipChat."
+                      "Valid values: html, text. Defaults to html.")
+
+    parser.add_option("-p", "--proxy",
+                      default="",
+                      dest="proxy",
+                      help="Specify a proxy in the form [user:passwd@]proxy.server:port.")
 
     ### Parse command line
     (options, args) = parser.parse_args()
