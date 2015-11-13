@@ -1,0 +1,24 @@
+python-hipsaint (0.4.8+nmu3) wheezy; urgency=low
+
+  * Fix use full hostname 
+
+ -- Dr. Torge Szczepanek <t.szczepanek@cygnusnetworks.de>  Wed, 09 Apr 2014 12:59:36 +0200
+
+python-hipsaint (0.4.8+nmu2) wheezy; urgency=low
+
+  * Non-maintainer upload.
+  * Fix use full hostname 
+
+ -- Dr. Torge Szczepanek <t.szczepanek@cygnusnetworks.de>  Wed, 09 Apr 2014 10:49:29 +0200
+
+python-hipsaint (0.4.8+nmu1) wheezy; urgency=low
+
+  * Use full hostname
+
+ -- Dr. Torge Szczepanek <debian@cygnusnetworks.de>  Wed, 02 Apr 2014 17:59:12 +0200
+
+python-hipsaint (0.4.8) wheezy; urgency=low
+
+  * Initial Debian Packaging
+
+ -- Dr. Torge Szczepanek <debian@cygnusnetworks.de>  Wed, 02 Apr 2014 16:24:08 +0200
